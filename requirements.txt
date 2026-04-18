@@ -4,6 +4,7 @@ langchain-google-genai
 langchain-groq
 langchain-huggingface
 langgraph
+langchain-text-splitters
 matplotlib
 oauthlib
 pydantic
@@ -20,3 +21,6 @@ arxiv
 duckduckgo-search
 datasets
 huggingface_hub
+whisper
+supabase
+pytest
