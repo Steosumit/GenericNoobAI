@@ -1,0 +1,20 @@
+name: Sync to Hugging Face hub
+on:
+  push:
+    branches: [main] # Runs every time you push to the 'main' branch
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+      - name: Push to hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # Replace 'USERNAME' and 'SPACE_NAME' with your actual info
+          git push --force https://steosumit:$HF_TOKEN@huggingface.co/spaces/steosumit/GenericNoobAI main
