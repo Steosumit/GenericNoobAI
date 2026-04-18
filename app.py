@@ -8,17 +8,17 @@ import os
 load_dotenv()
 hf_token = os.getenv("HUGGINGFACEHUB_API_KEY")
 ## Check if user has accepted GAIA terms
-# try:
-#     huggingface_hub.login(token=hf_token)
-#     huggingface_hub.whoami()  # Verify HF authentication
-# except Exception as e:
-#     print("[KNOW ISSUE]", e)
-#     try:
-#         os.system("hf auth login")
-#     except Exception as e2:
-#         print("[MSG] hf package not installed probably.", e2)
-#     print("[ERROR] User not logged in to Hugging Face Hub. Please log) in to access GAIA benchmark.")
-#     exit(1)
+try:
+    huggingface_hub.login(token=hf_token)
+    huggingface_hub.whoami()  # Verify HF authentication
+except Exception as e:
+    print("[KNOW ISSUE]", e)
+    try:
+        os.system("hf auth login")
+    except Exception as e2:
+        print("[MSG] hf package not installed probably.", e2)
+    print("[ERROR] User not logged in to Hugging Face Hub. Please log) in to access GAIA benchmark.")
+    exit(1)
 
 import gradio as gr
 import requests
