@@ -116,7 +116,8 @@ print("[INIT] Output parser ready.")
 ### ===Custom Agent Code=== ###
 # LLM
 # llm_instance = ChatGoogleGenerativeAI(model="models/gemini-flash-latest", temperature=0)
-ans = input("Which model to use? (1: Qwen3-32B, 2: Gemini Flash Lite) ")
+#ans = input("Which model to use? (1: Qwen3-32B, 2: Gemini Flash Lite) ")
+ans = "1"
 if ans=="1":
     llm_instance = ChatGroq(model="qwen/qwen3-32b", temperature=0)
 else:
