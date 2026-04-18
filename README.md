@@ -1,10 +1,13 @@
 Working Demo: https://drive.google.com/file/d/1dpZVYRiy7n8ff524r1nTVDSY06bTh30a/view?usp=sharing
 
 ---
-Known Issue:
+# Known Issue:
 
-April 18, 2026: Huggingface dependent functions are causing unknown errors(EXISTS)
-Dec 20, 2026: GAIA dataset link via huggingface was causing server side errors. Resolved by manually downloading and mapping the question to the testing api(RESOLVED)
+- April 18, 2026 : 
+Huggingface dependent functions are causing unknown errors(EXISTS)
+
+- Dec 20, 2026 :
+GAIA dataset link via huggingface was causing server side errors. Resolved by manually downloading and mapping the questions to the testing api(RESOLVED)
 ---
 
 ---
